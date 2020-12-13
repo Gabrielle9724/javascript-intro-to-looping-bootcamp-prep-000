@@ -1,3 +1,8 @@
+function incrementVariable() {
+  i = i + 1;
+  return i;
+}
+
 function forLoop(array) {
   for (let i=0; i<25; i++) {
     if(i === 1) {
@@ -15,4 +20,10 @@ function whileLoop(n) {
     n--;
   }
   return 'done'
+}
+
+function doWhileLoop(num) {
+  do {
+    console.log("I run once regardless.")
+  } while (incrementVariable()<1)
 }
